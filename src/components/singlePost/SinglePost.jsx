@@ -9,7 +9,7 @@ export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
-  const PF = "https://bloggyies.herokuapp.com/images/";
+  // const PF = "https://bloggyies.herokuapp.com/images/";
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
@@ -44,13 +44,13 @@ export default function SinglePost() {
       setUpdateMode(false)
     } catch (err) {}
   };
-  console.log(`${process.env.REACT_APP_API_URL}posts/` + path)
+  // console.log(`${process.env.REACT_APP_API_URL}posts/` + path)
 
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
         {post.photo && (
-          <img src={PF + post.photo} alt="" className="singlePostImg" />
+          <img src={"https://bloggyies.herokuapp.com/images/" + post.photo} alt="" className="singlePostImg" />
         )}
         {updateMode ? (
           <input

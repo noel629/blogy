@@ -44,6 +44,7 @@ export default function SinglePost() {
       setUpdateMode(false)
     } catch (err) {}
   };
+  console.log(`${process.env.REACT_APP_API_URL}posts/` + path)
 
   return (
     <div className="singlePost">

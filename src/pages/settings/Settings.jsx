@@ -66,7 +66,7 @@ export default function Settings({userss}) {
       data.append("file", file);
       updatedUser.profilePic = filename;
       try {
-        await axios.post("/upload", data);
+        await axios.post(`${process.env.REACT_APP_API_URL}upload`, data);
       } catch (err) {}
     }
     try {

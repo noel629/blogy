@@ -49,9 +49,8 @@ export default function SinglePost() {
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
-        {post.photo && (
+        
           <img src={"https://bloggyies.herokuapp.com/images/" + post.photo} alt="" className="singlePostImg" />
-        )}
         {updateMode ? (
           <input
             type="text"

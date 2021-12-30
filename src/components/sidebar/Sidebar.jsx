@@ -25,7 +25,7 @@ export default function Sidebar() {
           Sheesh.
         </p>
       </div>
-      <div className="sidebarItem">
+      {/* <div className="sidebarItem">
         <span className="sidebarTitle">CATEGORIES</span>
         <ul className="sidebarList">
           {cats.map((c) => (
@@ -34,7 +34,7 @@ export default function Sidebar() {
             </Link>
           ))}
         </ul>
-      </div>
+      </div> */}
       <div className="sidebarItem">
         <div className="sidebarSocial">
         </div>

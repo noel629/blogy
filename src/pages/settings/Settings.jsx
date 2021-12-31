@@ -82,7 +82,7 @@ export default function Settings({userss}) {
     <div className="settings">
       <div className="settingsWrapper">
         <div className="settingsTitle">
-          <span className="settingsUpdateTitle">Update Your Account</span>
+          {/* <span className="settingsUpdateTitle">Update Your Account</span> */}
           <button className="settingsDeleteTitle" onClick={onSubmitHandler}> {deleted && <Redirect to="/" />}Delete Account</button>
         </div>
         <form className="settingsForm" onSubmit={handleSubmit}>

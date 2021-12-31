@@ -88,10 +88,10 @@ export default function Settings({userss}) {
         <form className="settingsForm" onSubmit={handleSubmit}>
           {/* <label>Profile Picture</label> */}
           <div className="settingsPP">
-            <img
+            {/* <img
               src={file ? URL.createObjectURL(file) : PF+user.profilePic}
               alt=""
-            />
+            /> */}
             <label htmlFor="fileInput">
               <i className="settingsPPIcon far fa-user-circle"></i>
             </label> 

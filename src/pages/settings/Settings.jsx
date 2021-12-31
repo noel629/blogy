@@ -87,12 +87,12 @@ export default function Settings({userss}) {
         </div>
         <form className="settingsForm" onSubmit={handleSubmit}>
           {/* <label>Profile Picture</label> */}
-          <div className="settingsPP">
+          {/* <div className="settingsPP"> */}
             {/* <img
               src={file ? URL.createObjectURL(file) : PF+user.profilePic}
               alt=""
             /> */}
-            <label htmlFor="fileInput">
+            {/* <label htmlFor="fileInput">
               <i className="settingsPPIcon far fa-user-circle"></i>
             </label> 
             <input
@@ -101,7 +101,7 @@ export default function Settings({userss}) {
               style={{ display: "none" }}
               onChange={(e) => setFile(e.target.files[0])}
             />
-          </div>
+          </div> */}
           <label>Username</label>
           <input
             type="text"
